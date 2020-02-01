@@ -1,4 +1,5 @@
-html,body {
+html,
+body {
     height: 100%;
 }
 
@@ -7,6 +8,7 @@ html,body {
     margin: 0 auto;
     padding: 20px;
 }
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -19,10 +21,10 @@ html,body {
     font-weight: 300;
     text-align: center;
     font-size: 45px;
-    margin: 0;
+    margin: auto;
 }
 
-.logo p {
+p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #ddd;
@@ -52,49 +54,65 @@ html,body {
 }
 
 @media (min-width: 768px) {
-    .canvas {       
+    .canvas {
         margin: 10px auto;
         padding: 75px;
     }
-   
+
     .contenedor-menu {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         align-content: center;
+        margin: 1.6em;
     }
 
     .logo p {
         text-align: left;
-        }
+    }
 
-        .menu {
-            display: flex;
-            justify-content: space-between;
-            
-            
-        }
-        
-        .menu a  {
-            display: inline-block;
-            padding: .5em 1.5em;
-            text-decoration: none;
-            text-transform: uppercase;
-        } 
+    .menu {
+        display: flex;
+    }
 
-       
-    
+    .menu a {
+        display: inline-block;
+        padding-left: 4em;
+        text-decoration: none;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(31, 31, 31);
+        font-size: 14px;
+
+    }
 
     .contenedor {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 15px;
-        padding: 50px 0;
-        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+        max-width: 1200px;
+
+    }
+
+    .imagen {
+        padding: 0 20px 10px;
     }
 
     .contenedor img {
+        width:  560px;
+        height: 582px;
         max-width: 100%;
-        height: 556px;
+        transition: 0.5s all ease;
+
+    }
+
+    .contenedor img:hover {
+        transform: scale(0.97);
+        transition: 0.5s all ease;
     }
 
 }
