@@ -24,7 +24,7 @@ body {
     margin: auto;
 }
 
-p {
+.logo p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #ddd;
@@ -52,6 +52,31 @@ p {
     width: 100%;
     margin-top: .7em;
 }
+
+/*about html*/
+.avatar img {
+    width: 100%;
+}
+
+.contenedor-about {
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-about h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.contenedor-about p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: justify;
+    font-size: 15px;
+    margin-top: .7em;
+
+}
+
 
 @media (min-width: 768px) {
     .canvas {
@@ -117,12 +142,11 @@ p {
 
 }
 
-
-
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 1.2em;
 }
 
 .footer h3 {
