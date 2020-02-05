@@ -256,7 +256,7 @@ h2 {
     }
 
     .contenedor-menu {
-        margin: 0;
+        margin: 2em 1.2em 0 1em;
     }
 
     .logo {
@@ -279,7 +279,7 @@ h2 {
     }
 
     .footer {
-        margin: 2em 1em 0 1em;
+        margin: 2em 1.2em 0 1em;
     }
 
     .footer h3 {
