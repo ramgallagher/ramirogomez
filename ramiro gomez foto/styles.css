@@ -1,4 +1,3 @@
-html,
 body {
     height: 100%;
 }
@@ -79,22 +78,24 @@ body {
 
 .contenedor-about h1,
 .contenedor-info h1,
-h2{
+h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 0;
 }
+
 .contenedor-info p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin-bottom: 10px;
     line-height: 1.6em;
-    
+
 }
+
 .contenedor-info a {
     border-bottom: 1px dotted #222;
-    
+
 }
 
 .contenedor-about p {
@@ -235,26 +236,29 @@ h2{
     color: #000;
     text-decoration: none;
 }
+
 @media (min-width: 768px) {
-    .footer{
+    .footer {
         margin-top: 2em;
         margin-right: 1.2em;
-        margin-botton: auto;
+        margin-bottom: auto;
         margin-left: auto;
     }
 }
 
 
-  
+
 @media (min-width: 1004px) {
 
 
     .contenedor-about img {
         width: 100%;
     }
+
     .contenedor-menu {
         margin: 0;
     }
+
     .logo {
         margin-left: 10px;
     }
@@ -284,4 +288,75 @@ h2{
         font-weight: 300;
     }
 
+}
+
+/*Contact*/
+.contact {
+    padding: 50px 0;
+}
+
+.txtb {
+    margin: 24px 0;
+}
+
+.txtb input {
+    width: 100%;
+    padding: 12px 6px;
+    margin: 6px 0 4px 0;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+}
+
+.txtb textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+}
+.contact-form button {
+    color: #fff;
+    background-color: #272727;
+    border-color: #272727;
+    padding: 1em 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact h1 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #222222;
+    letter-spacing: .06em;
+}
+
+.contact h3 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #7c7979;
+
+}
+
+.text-contact {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.8em;
+    font-size: 15px;
+    margin: 0 0 1em;
+}
+
+.contact-form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
 }
