@@ -2,6 +2,10 @@ body {
     height: 100%;
 }
 
+/*menu hamburguesa*/
+
+/*fin del menu hamburguesa*/
+
 .canvas {
     max-width: 1200px;
     margin: 0 auto;
@@ -14,7 +18,10 @@ body {
     display: -webkit-flex;
     flex-direction: column;
 }
-
+.logo a {
+    text-decoration: none;
+    color: #222;
+}
 
 .logo h1 {
     text-transform: uppercase;
@@ -267,6 +274,7 @@ h2 {
         display: -ms-flex;
         display: -webkit-flex;
         display: flex;
+        margin: 0 20px;
     }
 
     .grid>div {
@@ -360,3 +368,12 @@ h2 {
     font-weight: 300;
     font-size: 15px;
 }
+@media (min-width: 1004px) {
+    .contact {
+        padding: 50px 30px;
+    }
+    .page-divider {
+        margin: 0 30px;
+    }
+}
+
