@@ -1,0 +1,59 @@
+@mixin canvas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin lightFont {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;    
+}
+
+@mixin normalFont {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;  
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    
+}
+
+@mixin flexNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 1.6em;
+}
+@mixin flexFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.2em;
+    
+}
+
+@mixin page-divider {
+    border-bottom: 1px solid #ddd;
+    opacity: 1;
+
+}
+@mixin mobile {
+    @media (min-width: 768px) {
+        @content 
+    }
+}
+
+@mixin laptop {
+    @media (min-width: 1004px) {
+        @content 
+    }
+    
+}
