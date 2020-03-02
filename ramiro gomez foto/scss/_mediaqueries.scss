@@ -1,0 +1,135 @@
+@include mobile {
+    .canvas {
+        margin: 10px auto;
+        padding: 75px;
+    }
+
+   .mobileMenuLink  {
+       display: none;
+   }
+
+    .contenedor-menu {
+        @include flexNav;
+        margin: 1.6em;
+    }
+
+    .logo {
+        flex-wrap: wrap;
+        margin-left: 3%;
+
+        p {
+            text-align: left;
+        }
+
+        h1 {
+            text-align: left;
+        }
+    }
+
+    .menu {
+        display: flex;
+
+        a {
+            @include lightFont;
+            text-transform: uppercase;
+            display: inline-block;
+            padding-left: 4em;
+            text-decoration: none;
+            color: rgb(31, 31, 31);
+            font-size: 14px;
+        }
+    }
+
+    
+
+     .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        max-width: 1200px;
+
+        img {
+            width: 560px;
+            height: 582px;
+            max-width: 100%;
+            transition: 0.5s all ease;
+        }
+
+        img:hover {
+            transform: scale(0.97);
+            transition: 0.5s all ease;
+        }
+    }
+
+    .imagen {
+        padding: 0 20px 10px;
+    }
+
+    .contenedor-about img {
+        width: 75%;
+    }
+
+    .page-divider {
+        border-bottom: 1px solid #ddd;
+        opacity: 1;
+    }
+
+    .footer {
+        margin-top: 2em;
+        margin-right: 1.2em;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+
+}
+
+@include laptop {
+    .contenedor-menu {
+        margin: 2em 1.2em 0 1em;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .grid {
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        margin: 0 20px;
+    }
+
+    .grid>div {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .grid>div:first-child {
+        margin-right: 50px;
+    }
+
+    .contenedor-about img {
+        width: 100%;
+    }
+
+    .footer {
+        margin: 2em 1.2em 0 1em;
+
+        h3 {
+            font-size: 16px;
+            color: #575757;
+            font-weight: 300;
+        }
+
+    }
+
+    .page-divider {
+        display: none;
+    }
+
+    .contact {
+        padding: 50px 30px;
+    }
+}

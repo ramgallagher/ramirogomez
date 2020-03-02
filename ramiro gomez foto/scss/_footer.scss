@@ -1,0 +1,18 @@
+.footer {
+    @include flexNav;
+    margin: 1em 0;
+
+    h3 {
+        @include lightFont;
+    }
+
+    i {
+        font-size: 36px;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+}

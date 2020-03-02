@@ -1,0 +1,9 @@
+.contenedor {
+    @include flexColumn;
+
+    img {
+        width: 100%;
+        margin-top: .7em;
+    }
+
+}

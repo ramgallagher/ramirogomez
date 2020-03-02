@@ -1,0 +1,57 @@
+
+.avatar {
+    @include flexCenter;
+}
+
+.contenedor-about {
+    @include flexColumn;
+
+    img {
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        margin-top: 0.7em;
+        @extend %placeHolder1;
+    }
+
+    p {
+        @include lightFont;
+        line-height: 1.8em;
+        text-align: justify;
+        font-size: 15px;
+        margin: .7em 0;
+
+    }
+}
+
+%placeHolder1 {
+    @include lightFont;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.contenedor-info {
+    @include flexColumn;
+
+    h1,
+    h2 {
+        @extend %placeHolder1;
+        margin: 0.5em 0;
+    }
+
+    p {
+        @include lightFont;
+        line-height: 1.8em;
+        margin-bottom: 10px;
+        line-height: 1.6em;
+    }
+
+    a {
+        border-bottom: 1px dotted #222;
+        text-decoration: none;
+        color: #000;
+    }
+
+}

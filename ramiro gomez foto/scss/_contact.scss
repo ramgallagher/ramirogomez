@@ -1,0 +1,60 @@
+.contact {
+    padding: 50px 0;
+    h1 {
+        @include lightFont;
+        font-size: 30px;
+        color: $primary-color;
+        letter-spacing: .06em;
+    }
+    h3 {
+        @include lightFont;
+        font-size: 1.2em;
+        color: $accent-color;
+        text-transform: uppercase;
+    }
+}
+.txtb {
+    margin: 24px 0; 
+
+    input {
+        width: 100%;
+        padding: 12px 6px;
+        margin: 6px 0 4px 0;
+        border: 1px solid #ccc;
+        background: #fafafa;
+        color: #000;
+}
+textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    color: #000;
+}
+}
+.contact-form {
+    @include lightFont;
+    font-size: 15px;
+
+ button {
+    color: #fff;
+    background-color: #272727;
+    border: none;
+    padding: 1em 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+button:hover {
+    background-color: #1e3572;
+    border: none;
+}
+}
+
+.text-contact {
+    @include lightFont;
+    font-size: 15px;
+    line-height: 1.8em;
+    margin: 0 0 1em;
+}
